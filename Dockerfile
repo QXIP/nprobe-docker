@@ -8,4 +8,5 @@ RUN sudo dpkg -i apt-ntop.deb
 RUN rm -rf apt-ntop.deb
 
 RUN apt-get update
-RUN apt-get install pfring nprobe
+RUN apt-get -y -q install pfring nprobe
+RUN nprobe -v
