@@ -8,5 +8,5 @@ RUN sudo dpkg -i apt-ntop.deb
 RUN rm -rf apt-ntop.deb
 
 RUN apt-get update
-RUN apt-get -y -q install nprobe libgeoip-dev
+RUN apt-get -y -q install nprobe
 RUN nprobe -v
